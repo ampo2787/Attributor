@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		7A6D04062178905100990111 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D04052178905100990111 /* AppDelegate.m */; };
-		7A6D04092178905100990111 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D04082178905100990111 /* ViewController.m */; };
 		7A6D040C2178905100990111 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A6D040A2178905100990111 /* Main.storyboard */; };
 		7A6D040E2178905300990111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A6D040D2178905300990111 /* Assets.xcassets */; };
 		7A6D04112178905300990111 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A6D040F2178905300990111 /* LaunchScreen.storyboard */; };
 		7A6D04142178905300990111 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D04132178905300990111 /* main.m */; };
+		7A6D041C2178929800990111 /* AttributorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D041B2178929800990111 /* AttributorViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7A6D04012178905100990111 /* Attributor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attributor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A6D04042178905100990111 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7A6D04052178905100990111 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7A6D04072178905100990111 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7A6D04082178905100990111 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7A6D040B2178905100990111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7A6D040D2178905300990111 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A6D04102178905300990111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A6D04122178905300990111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A6D04132178905300990111 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7A6D041A2178929800990111 /* AttributorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttributorViewController.h; sourceTree = "<group>"; };
+		7A6D041B2178929800990111 /* AttributorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttributorViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +58,33 @@
 		7A6D04032178905100990111 /* Attributor */ = {
 			isa = PBXGroup;
 			children = (
+				7A6D041E217896BE00990111 /* Controller */,
+				7A6D041D217896B500990111 /* View */,
 				7A6D04042178905100990111 /* AppDelegate.h */,
 				7A6D04052178905100990111 /* AppDelegate.m */,
-				7A6D04072178905100990111 /* ViewController.h */,
-				7A6D04082178905100990111 /* ViewController.m */,
-				7A6D040A2178905100990111 /* Main.storyboard */,
-				7A6D040D2178905300990111 /* Assets.xcassets */,
 				7A6D040F2178905300990111 /* LaunchScreen.storyboard */,
+				7A6D040D2178905300990111 /* Assets.xcassets */,
 				7A6D04122178905300990111 /* Info.plist */,
 				7A6D04132178905300990111 /* main.m */,
 			);
 			path = Attributor;
+			sourceTree = "<group>";
+		};
+		7A6D041D217896B500990111 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7A6D040A2178905100990111 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7A6D041E217896BE00990111 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7A6D041A2178929800990111 /* AttributorViewController.h */,
+				7A6D041B2178929800990111 /* AttributorViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +157,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A6D04092178905100990111 /* ViewController.m in Sources */,
 				7A6D04142178905300990111 /* main.m in Sources */,
+				7A6D041C2178929800990111 /* AttributorViewController.m in Sources */,
 				7A6D04062178905100990111 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Attributor View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AttributorViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="poX-fu-QD9">
+                                <rect key="frame" x="0.0" y="135" width="375" height="201"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HeadLine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqM-8X-B0A">
+                                <rect key="frame" x="16" y="56" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRS-bk-BCF">
+                                <rect key="frame" x="51" y="393" width="68.5" height="85"/>
+                                <color key="backgroundColor" red="1" green="0.18460916223613844" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="LtK-RT-EW5"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="changeBodySelectionColorToMatchBackgroundOfButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d3B-zE-xJj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUR-5a-qhe">
+                                <rect key="frame" x="119.5" y="393" width="68" height="85"/>
+                                <color key="backgroundColor" red="1" green="0.4760488505592444" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="changeBodySelectionColorToMatchBackgroundOfButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="95a-hB-2A1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uWh-l0-ruD">
+                                <rect key="frame" x="256" y="393" width="68" height="85"/>
+                                <color key="backgroundColor" red="0.087166441436028808" green="1" blue="0.047890660145867736" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="changeBodySelectionColorToMatchBackgroundOfButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SGm-ym-nG2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ct-wS-Z32">
+                                <rect key="frame" x="94" y="510" width="49" height="30"/>
+                                <state key="normal" title="Outline"/>
+                                <connections>
+                                    <action selector="outlineBodySelection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rGi-g5-sOG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOi-Kj-MJe">
+                                <rect key="frame" x="214" y="510" width="66" height="30"/>
+                                <state key="normal" title="Unoutline"/>
+                                <connections>
+                                    <action selector="unoutlineBodySelect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="evM-9t-xD1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9d-1Q-FTG">
+                                <rect key="frame" x="187.5" y="393" width="68.5" height="85"/>
+                                <color key="backgroundColor" red="0.5167731510054594" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="changeBodySelectionColorToMatchBackgroundOfButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iyb-1T-Lkv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="l9d-1Q-FTG" firstAttribute="baseline" secondItem="fRS-bk-BCF" secondAttribute="baseline" id="2Mc-4y-Hcm"/>
+                            <constraint firstItem="l9d-1Q-FTG" firstAttribute="width" secondItem="fRS-bk-BCF" secondAttribute="width" id="5Z8-SE-B8Y"/>
+                            <constraint firstItem="uWh-l0-ruD" firstAttribute="baseline" secondItem="l9d-1Q-FTG" secondAttribute="baseline" id="8DZ-7i-m5R"/>
+                            <constraint firstItem="fRS-bk-BCF" firstAttribute="firstBaseline" secondItem="uWh-l0-ruD" secondAttribute="firstBaseline" id="AUS-aU-BKr"/>
+                            <constraint firstItem="uWh-l0-ruD" firstAttribute="baseline" secondItem="fRS-bk-BCF" secondAttribute="baseline" id="Cvw-7R-igu"/>
+                            <constraint firstItem="poX-fu-QD9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="E7f-wK-V1S"/>
+                            <constraint firstItem="uWh-l0-ruD" firstAttribute="top" secondItem="poX-fu-QD9" secondAttribute="bottom" constant="57" id="GfY-Uw-CWi"/>
+                            <constraint firstItem="NUR-5a-qhe" firstAttribute="baseline" secondItem="l9d-1Q-FTG" secondAttribute="baseline" id="KBD-0j-0gg"/>
+                            <constraint firstItem="1Ct-wS-Z32" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="Le5-th-I5r"/>
+                            <constraint firstItem="NUR-5a-qhe" firstAttribute="firstBaseline" secondItem="fRS-bk-BCF" secondAttribute="firstBaseline" id="M7l-bx-q3Z"/>
+                            <constraint firstItem="fRS-bk-BCF" firstAttribute="top" secondItem="poX-fu-QD9" secondAttribute="bottom" constant="57" id="Ozu-zv-iY9"/>
+                            <constraint firstItem="NUR-5a-qhe" firstAttribute="top" secondItem="poX-fu-QD9" secondAttribute="bottom" constant="57" id="Q0o-o0-8wb"/>
+                            <constraint firstItem="uWh-l0-ruD" firstAttribute="width" secondItem="fRS-bk-BCF" secondAttribute="width" id="QNY-tY-gze"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1Ct-wS-Z32" secondAttribute="bottom" constant="127" id="So2-CU-Z1i"/>
+                            <constraint firstItem="uWh-l0-ruD" firstAttribute="leading" secondItem="l9d-1Q-FTG" secondAttribute="trailing" id="W6x-Jh-fDx"/>
+                            <constraint firstItem="l9d-1Q-FTG" firstAttribute="leading" secondItem="NUR-5a-qhe" secondAttribute="trailing" id="YyF-y8-clI"/>
+                            <constraint firstItem="fRS-bk-BCF" firstAttribute="firstBaseline" secondItem="l9d-1Q-FTG" secondAttribute="firstBaseline" id="Zo7-dS-z2G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sOi-Kj-MJe" secondAttribute="bottom" constant="127" id="aVW-uR-pnz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iqM-8X-B0A" secondAttribute="trailing" constant="16" id="aw7-WX-FUc"/>
+                            <constraint firstItem="iqM-8X-B0A" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="fgV-Mt-igK"/>
+                            <constraint firstItem="NUR-5a-qhe" firstAttribute="height" secondItem="fRS-bk-BCF" secondAttribute="height" id="gVg-qD-4Ts"/>
+                            <constraint firstItem="NUR-5a-qhe" firstAttribute="baseline" secondItem="fRS-bk-BCF" secondAttribute="baseline" id="gzs-qp-t9R"/>
+                            <constraint firstItem="fRS-bk-BCF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="51" id="iS5-ZE-bgi"/>
+                            <constraint firstItem="uWh-l0-ruD" firstAttribute="height" secondItem="fRS-bk-BCF" secondAttribute="height" id="jMY-fj-CAu"/>
+                            <constraint firstItem="l9d-1Q-FTG" firstAttribute="top" secondItem="poX-fu-QD9" secondAttribute="bottom" constant="57" id="jNS-Af-jPE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uWh-l0-ruD" secondAttribute="trailing" constant="51" id="kbT-p4-Teu"/>
+                            <constraint firstItem="uWh-l0-ruD" firstAttribute="firstBaseline" secondItem="l9d-1Q-FTG" secondAttribute="firstBaseline" id="kce-2c-QRO"/>
+                            <constraint firstItem="poX-fu-QD9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mHz-h3-HLv"/>
+                            <constraint firstItem="iqM-8X-B0A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="n6I-8G-R0F"/>
+                            <constraint firstItem="l9d-1Q-FTG" firstAttribute="height" secondItem="fRS-bk-BCF" secondAttribute="height" id="nJn-l4-hh8"/>
+                            <constraint firstItem="NUR-5a-qhe" firstAttribute="firstBaseline" secondItem="uWh-l0-ruD" secondAttribute="firstBaseline" id="nOe-Up-AtY"/>
+                            <constraint firstItem="1Ct-wS-Z32" firstAttribute="top" secondItem="NUR-5a-qhe" secondAttribute="bottom" constant="32" id="o6v-MJ-7Wt"/>
+                            <constraint firstItem="l9d-1Q-FTG" firstAttribute="firstBaseline" secondItem="NUR-5a-qhe" secondAttribute="firstBaseline" id="sYx-lT-owh"/>
+                            <constraint firstItem="NUR-5a-qhe" firstAttribute="leading" secondItem="fRS-bk-BCF" secondAttribute="trailing" id="tE0-9n-Aki"/>
+                            <constraint firstItem="sOi-Kj-MJe" firstAttribute="leading" secondItem="1Ct-wS-Z32" secondAttribute="trailing" constant="71" id="tHe-6B-hyp"/>
+                            <constraint firstItem="uWh-l0-ruD" firstAttribute="baseline" secondItem="NUR-5a-qhe" secondAttribute="baseline" id="uYU-1o-uxT"/>
+                            <constraint firstItem="poX-fu-QD9" firstAttribute="top" secondItem="iqM-8X-B0A" secondAttribute="bottom" constant="58" id="wEx-6p-HvV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sOi-Kj-MJe" secondAttribute="trailing" constant="95" id="wiS-H1-9k4"/>
+                            <constraint firstItem="NUR-5a-qhe" firstAttribute="width" secondItem="fRS-bk-BCF" secondAttribute="width" id="yO8-gY-jOr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="body" destination="poX-fu-QD9" id="zDR-tR-7Lh"/>
+                        <outlet property="headline" destination="iqM-8X-B0A" id="cJJ-rp-tfo"/>
+                        <outlet property="outlineButton" destination="1Ct-wS-Z32" id="xE7-Lr-Onk"/>
+                        <outlet property="unoutlineButton" destination="sOi-Kj-MJe" id="1qS-tF-FkW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
